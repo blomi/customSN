@@ -1,0 +1,361 @@
+.content{
+	width: 85%;
+	/* display: block; */
+	margin: 0px auto 0px auto;
+	/*height: 500px;*/
+	/*left: 250px;
+	position: absolute;
+	
+	margin-top: 15px;
+	*//*background-color: red;*/
+}
+
+
+.profile-left{
+	float:left;
+	width: 200px;
+	margin-right: 20px;
+	margin-top: 20px;
+	/* background-color: yellow; */
+}
+
+.profile-menu{
+
+}
+
+.profile-menu-item{
+	margin-top: 3px;
+	display: block;
+	padding-left: 7px;
+	/*border: 5px 1px 0px 1px solid white;*/
+	border-top:1px solid white;
+	border-left: 5px solid white;
+	border-bottom: 1px solid white;
+	width: 100%;
+	color: black;
+	outline: none;
+	text-decoration: none;
+	
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 30px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.profile-menu-item:hover{
+	/*background-color: grey;*/
+	/*border-top: 1px solid #DDDDDD;*/
+	border-bottom: 1px solid #DDDDDD;
+	border-left: 5px solid #AAAAAA;
+}
+
+.active-menu-item{
+	border-bottom: 1px solid #DDDDDD;
+	border-left: 5px solid #AAAAAA;
+}
+
+
+.profile-mid-content{
+	/* float: left; */
+	overflow: hidden;
+	display: block;
+	width: auto;
+	/*height: 400px;*/
+	/* width: 70%; */
+	min-height: 200px;
+	border-left: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	/* background-color: grey; */
+}
+
+.profile-sub-menu{
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: center;
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	/* background-color: red; */
+}
+
+.profile-sub-menu-item{
+	height: 40px;
+	margin-top: 7px;
+	min-width: 110px;
+	padding-left: 10px;
+	padding-right: 10px;
+	/* background-color: green; */
+	color: black;
+	line-height: 40px;
+	font-size: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.2s;
+	border-top: 3px solid white;
+	/* transition-property: height; */
+	/* border-top: 1px solid #DDDDDD; */
+}
+
+.profile-sub-menu-item:hover{
+	/* margin-top: 0px; */
+	border-color:  #212121;
+	background-color: #EEEEEE;
+}
+
+.active-sub-menu-item{
+	border-color:  #212121;
+	background-color: #EEEEEE;
+}
+
+.profile-pic{
+	float:left;
+	width: 300px;
+	height: 400px;
+	/*background-color: green;*/
+	/*border: 1px solid green;*/
+}
+
+.user-name{
+	width: 200px;
+	margin: 0px auto 0px auto;
+	height: 40px;
+	line-height: 40px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+}
+
+.p-pic{
+	display: block;
+	margin: 0px auto 0px auto;
+	border-radius: 50%;
+}
+
+.update-pic{
+	width: 200px;
+	margin: 30px auto 30px auto;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border: 1px solid green;
+	border-radius: 5px;
+	background-color: #50C050;
+	cursor:pointer;
+}
+
+.update-pic:hover{
+	background-color: #30A030;
+
+}
+
+.profile-info{
+	/* display: inline; */
+	/* float:left; */
+	/* width: 100%; */
+	overflow: hidden;
+	/* width: calc(100% - 300px); */
+	/* background-color: red; */
+	/*height: 400px;*/
+}
+
+.profile-info-header{
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	font-size: 24px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.profile-info-item{
+	width: 100%;
+	height: 50px;
+	cursor: pointer;
+	transition: 0.1s;
+	/*background-color: grey;*/
+}
+
+.profile-info-item:hover{
+	background-color: #EEEEEE;
+}
+
+
+
+.profile-user-name-label{
+	float:left;
+	margin-left: 10px;
+	text-align: left;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.profile-user-name{
+	float:right;
+	width: 50%;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+
+.profile-field-edit-btn{
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin-top:10px;
+	margin-right:10px;
+	opacity: 0;
+	transition: 0.1s;
+	background-color: grey;
+	object-fit: cover;
+}
+
+.profile-info-item:hover .profile-field-edit-btn{
+	opacity: 0.4;
+}
+
+.profile-field-edit-btn:hover{
+	opacity: 0.4;
+}
+
+
+.friends-title-container{
+	width: 80%;
+	height: 80px;
+	margin: 0 auto;
+	/*background-color: red;*/
+}
+
+.friends-title{
+	float: left;
+	width: 200px;
+	margin-left: calc(50% - 200px);
+	/*background-color: green;*/
+	height: 80px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height: 80px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.friends-search-field-container{
+	float: left;
+	width: 280px;
+	/*background-color: blue;*/
+	height: 80px;
+}
+
+.friends-search-field{
+	/*width: 100%;*/
+	width: 260px;
+	height: 60px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	outline: none;
+	text-decoration: none;
+	border-radius: 40px 0px 0px 40px;
+	padding-left: 30px;
+	margin-top: 9px;
+	font-size: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border-left: 1px solid #AAAAAA;
+	border-top: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+.friends-search-btn-container{
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-top: 9px;
+	border-top: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+	border-right: 1px solid #AAAAAA;
+	border-radius: 0px 40px 40px 0px;
+	cursor: pointer;
+}
+
+.friends-search-btn{
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.friends-list{
+	width: 100%;
+	/*height: 400px;*/
+	/*background-color: red;*/
+	overflow: auto;
+}
+
+.friend-entry{
+	width: 90%;
+	height: 150px;
+	margin: 2px auto;
+	border-bottom: 1px solid #999999;
+	cursor: pointer;
+	/*border: 1px solid black;*/
+	/*background-color: green;*/
+}
+
+.friend-entry:hover{
+	background-color: #EEEEEE;
+}
+
+.friend-profile-pic-container{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 130px;
+	height: 130px;
+	/*background-color: blue;*/
+}
+
+.friend-profile-pic{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.friend-name{
+	float: left;
+	height: 150px;
+	line-height: 150px;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: "Courier New", Courier, monospace;
+	margin-left: 40px;
+}
+
+.friend-time{
+	float: left;
+	height: 150px;
+	line-height: 150px;
+	font-size: 22px;
+	font-weight: bold;
+	font-family: "Courier New", Courier, monospace;
+	margin-left: 20px;
+	color: #AAAAAA;
+}
+
+
+
+
+
+

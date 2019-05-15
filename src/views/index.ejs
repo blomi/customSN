@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/css/menu.css">
+	<link rel="stylesheet" type="text/css" href="/css/login.css">
+	<link rel="stylesheet" type="text/css" href="/css/footer.css">
+
+</head>
+
+<body>
+	<div class="menu-top">
+		<img class="logo" src="/img/oppai.png">
+		<div class="menu-btn" onclick="window.open('feed.html','_self');">Home</div>
+		<div class="menu-btn" onclick="window.open('profile/about/overview.html','_self');">Profile</div>
+		<div class="search-container">
+			<input class="search-tf" type="text" spellcheck="false" placeholder="Search">
+			<div class="search-icon-div">
+				<img class="search-icon" src="/img/search.png">
+			</div>
+		</div>
+		<div class="menu-btn-right">Settings</div>
+		<div class="menu-btn-right">Logout</div>
+		<!-- <div class="menu-btn"></div> -->
+
+
+	</div>
+
+	<div class="login-div">
+		<div class="login-header">
+			<div class="login-tab login-tab-active" id="log-tab">Sign In</div>
+			<div class="login-tab " id="reg-tab">Sign Up</div>
+		</div>
+		<div id="log-panel">
+			<form name="signInForm" action="/auth/signIn" method="post">
+				<input name="username" class="login-tf" type="text" placeholder="Username" />
+				<input name="password" class="login-tf" type="password" placeholder="Password" />
+				<div class="login-forget">Forgot your password? Click <a href="#" class="login-reset">here</a></div>
+				<input class="login-btn" type="submit" value="Sign In" />
+			</form>
+		</div>
+		<div id="reg-panel">
+			<form name="signUpForm" action="/auth/signUp" method="post">
+				<input name="username" class="login-tf" type="text" placeholder="Username" />
+				<!-- <input name="email" class="login-tf" type="email" placeholder="Email"/> -->
+				<input name="password" class="login-tf" type="password" placeholder="Password" />
+				<input name="repeatedPassword" class="login-tf" type="password" placeholder="Repeat Password" />
+				<!-- <div class="login-forget">Forgot your password? Click <a href="#" class="login-reset">here</a></div> -->
+				<div class="recaptcha-panel">
+					<input class="recaptcha-checkbox" type="checkbox" />
+					<div class="recaptcha-text">I'm not a robot</div>
+					<div class="recaptcha-div">
+						<img src="img/reCAPTCHA.jpg" />
+						<div>reCAPTCHA</div>
+						<div>Privacy - Terms</div>
+					</div>
+				</div>
+				<input class="login-btn" type="submit" value="Sign Up" />
+			</form>
+		</div>
+	</div>
+
+	<!-- 	<footer class="footer">
+			<div class="footer-line"></div>
+			<div class="footer-content"></div>
+		</footer> -->
+
+	<script src="/js//menu.js"></script>
+	<script src="/js/login.js"></script>
+</body>
+
+</html>

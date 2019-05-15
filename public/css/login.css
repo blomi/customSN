@@ -1,0 +1,170 @@
+.login-div{
+	width: 400px;
+	/*height: 600px;*/
+	margin: 6% auto;
+	border: 1px solid #cccccc;
+	border-radius: 15px;
+	/*background-color: grey;*/
+	overflow: hidden;
+	/*background-color: red;*/
+
+}
+
+.login-header{
+	width: 100%;
+	height: 70px;
+	background-color: #999999;
+	/*border-top: 1px solid #cccccc;*/
+	/*border-radius: 15px 15px 0px 0px;*/
+}
+
+.login-tab{
+	float: left;
+	width: 50%;
+	height: 70px;
+	font-size: 30px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: black;
+	line-height: 70px;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+}
+
+.login-tab:hover{
+	background-color: grey;
+}
+
+#log-panel{
+	/*background-color: red;*/
+	/*width: 100%;*/
+	/*height: 200px;*/
+	/* display: none; */
+}
+
+#reg-panel{
+	display: none;
+}
+
+.login-form{
+	/*width: 100%;*/
+	/*height: auto;*/
+	/*display: block;*/
+
+}
+
+.login-tf{
+	display: block;
+	width: 300px;
+	height: 55px;
+	margin: 20px auto;
+	padding: 0px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	outline: none;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #727272;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+.recaptcha-panel{
+	display: block;
+	width: 300px;
+	height: 70px;
+	margin: 20px auto;
+	padding: 0px;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	outline: none;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #727272;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+.recaptcha-panel > *{
+	float:left;
+	position: relative;
+}
+
+.recaptcha-checkbox{
+	float:left;
+	width: 30px;
+	height: 30px;
+	margin-top:20px;
+}
+
+.recaptcha-text{
+	height: 70px;
+	line-height: 70px;
+	text-align: left;
+
+}
+
+.recaptcha-div{
+	float:right;
+	width: 70px;
+	height: 60px;
+	margin-top: 5px;
+	margin-right: 15px;
+}
+
+.recaptcha-div > img{
+	display: block;
+	float: none;
+	margin-left: 19px;
+	width: 32px;
+	height: 32px;
+}
+
+.recaptcha-div > div{
+	display: block;
+	font-size: 9px;
+	width: 70px;
+	text-align: center;
+	/*margin-top: 0px;*/
+}
+
+
+
+.login-forget{
+	width: 312px;
+	height: 20px;
+	line-height: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: black;
+	font-size: 14px;
+	margin: 0 auto;
+}
+
+.login-reset{
+
+}
+
+.login-btn{
+	background-color: #50C050;
+	display: block;
+	width: 300px;
+	height: 55px;
+	margin: 20px auto;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.login-btn:hover{
+	background-color: #30A030;
+}
+
+.login-tab-active{
+	background-color: grey;
+	/*border-radius: 0px 0px 30px 0px;*/
+}

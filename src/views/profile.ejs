@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/css/menu.css">
+		<link rel="stylesheet" type="text/css" href="/css/profile.css">
+		<link rel="stylesheet" type="text/css" href="/css/footer.css">
+
+	</head>
+	<body>
+		<div class="menu-top">
+			<img class="logo" src="/img/oppai.png">
+			<a class="menu-btn" href="/user/feed">Home</a>
+			<a class="menu-btn" href="/user/profile">Profile</a>
+			<div class="search-container">
+				<input class="search-tf" type="text" spellcheck="false" placeholder="Search">
+				<div class="search-icon-div">
+					<img class="search-icon" src="/img/search.png">
+				</div>
+			</div>
+			<a class="menu-btn-right">Settings</a>
+			<a class="menu-btn-right">Logout</a>
+		</div>
+		<div class="content">
+			<div class="profile-left">
+				<div class="profile-menu">
+					<%for(var i = 0; i < menuItems.length; i++){%>
+						<a name="<%=menuItems[i].name%>" class="profile-menu-item"><%=menuItems[i].name%></a>
+					<%}%>
+				</div>		
+			</div>
+			<div class="profile-mid-content">
+				<div class="profile-sub-menu" id='subMenu'>
+				</div>
+				<div id="innerContent">
+					
+				</div>
+			</div>
+		</div>
+
+	<script src="/js/profile.js"></script>
+	<!-- <script src="/js/menu.js"></script> -->
+	<!-- <script src="/js/login.js"></script> -->
+	</body>
+</html>
